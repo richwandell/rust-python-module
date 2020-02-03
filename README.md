@@ -23,5 +23,10 @@ This will create a dll file on windows,
    quick sort code will sort a list of 100 random numbers faster than python's `sorted` method.
    This is a contrived example simply showing that for a completely random list, a custom quick sort
    implemented in a fast language can outperform pythons built in `timsort` based functions.
+   ```bash
+    Rust Quick Sort: 5.6400108
+    Python Sorted function: 10.864640899999998
+    ```
+
 
 [Py03]:https://github.com/PyO3/pyo3
