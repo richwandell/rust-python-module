@@ -1,0 +1,21 @@
+[package]
+name = "python"
+version = "0.1.0"
+authors = ["Rich Wandell <richwandell@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+[lib]
+name = "wandell_rust"
+crate-type = ["cdylib"]
+
+[dependencies.pyo3]
+version = "0.9.0-alpha.1"
+features = ["extension-module"]
+
+[profile.release]
+opt-level = 3
+debug = false
